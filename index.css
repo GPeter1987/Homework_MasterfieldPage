@@ -1,0 +1,247 @@
+body {
+  display: block;
+  width: 1000px;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+}
+
+
+#logo {
+  width:250px;
+}
+
+/* SlideShow elemek */
+slider {
+  display: block;
+  width: 1000px;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+slider > * {
+  position: absolute;
+  display: block;
+  width:100%;
+  height:300px;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1) {
+  left:0%;
+  animation-delay: -1s;
+  background-image: url(assets/img1.jpg) ;  /* első kép url-je*/
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url(assets/img2.jpg) ;  /* második kép url-je*/
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(3) {
+  animation-delay: 5s;
+  background-image: url(assets/img3.jpg) ;  /* harmadik kép url-je*/
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(4) {
+  animation-delay: 8s;
+  background-image: url(assets/img4.jpg) ;  /* negyedik kép url-je*/
+  background-size: cover;
+  background-position: center;
+}
+
+slide p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width:100%;
+  margin-top:200px;
+  text-shadow: 2px 2px 2px #000000 ;
+}
+
+.green {
+   color:#AED24A;
+}
+
+.blue {
+  color:#083F88;
+}
+
+@keyframes slide {
+  0% { left: 100%; width: 100%;}
+  5% { left: 0%;}
+  25% { left: 0%;}
+  30% { left: -100%; width: 100%;}
+  30.001% { left: -100%; width: 0%;}
+  100% { left: 100%; width: 0%;}
+}
+
+/* Menü elemek */
+nav {
+  display:block;
+  width:1000px;
+  height:50px;
+  position:absolute;
+  top:400px;
+  background-color: whitesmoke;
+  padding-top:10px;
+}
+
+/* Gombok */
+.btn {
+  text-decoration: none;
+  color: #083F88;
+  margin:30px;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color:#AED24A;
+  transition: 0.8s;
+}
+
+/* Weblap tartalmi része */
+#content {
+  display: block;
+  position: absolute;
+  top: 400px;
+  width: 1000px;
+  margin-top: 50px;
+  padding:15px;
+}
+
+.text {
+  width: 725px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.ill {
+  display: inline-block;
+  height:300px;
+  margin:20px;
+  filter: grayscale(50%);
+}
+
+/* Kommentek formázása */
+#comments {
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  width: 250px;
+  height:2010px;
+  background-color: whitesmoke;
+  left:750px;
+  top:170px;
+}
+
+/* Profilképek formázása */
+.profPic {
+  display:block;
+  margin:10px;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  filter: grayscale(50%);
+}
+
+.profPic:hover {
+  filter:grayscale(0%);
+  transition: 0.9s;
+}
+
+.alignR {
+  margin-left:150px;
+}
+
+#reg {
+  background-color:#F1F1F1;
+  border-bottom: 3px solid #083F88;
+  border-left: 3px solid #083F88;
+  border-right: 3px solid #AED24A;
+  border-top: 3px solid #AED24A;
+}
+
+#reg:hover {
+  border-bottom: 10px solid #083F88;
+  border-left: 10px solid #083F88;
+  border-right: 10px solid #AED24A;
+  border-top: 10px solid #AED24A;
+  transition: 1s;
+}
+
+.jbtn{
+  border-radius: 15px;
+  padding: 25px;
+  font-family: ;
+  font-size: 25px;
+  background-color: #083F88;
+  color:#AED24A;
+  border-bottom: 3px solid #AED24A;
+  border-left: 3px solid #AED24A;
+  border-right: 3px solid #083F88;
+  border-top: 3px solid #083F88;
+  margin: 10px;
+}
+
+.jbtn:hover {
+  border-bottom: 3px solid #083F88;
+  border-left: 3px solid #083F88;
+  border-right: 3px solid #AED24A;
+  border-top: 3px solid #AED24A;
+  background-color: #AED24A;
+  color:#083F88;
+  transition: 0.9s;
+}
+
+.par {
+  padding: 15px;
+}
+
+p, a{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+
+/* Footer */
+footer {
+  position: absolute;
+  display: block;
+  height:50px;
+  width:1000px;
+  text-align: center;
+  bottom:-1750px;
+  background-color: #083F88;
+}
+
+footer a {
+  text-decoration: none;
+  color:aliceblue;
+}
